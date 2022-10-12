@@ -13,12 +13,71 @@
     justify-content: center;
     .phone{
         width: 500px;
+        height: 700px;
         border: 1px solid black;
         padding: 25px;
         border-radius: 40px;
     }
+    .profile{
+        border-radius: 15px 15px 0 0;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        background-color: violet;
+        height: 10%;
+        &__picture{
+            width: 50px;
+            border-radius: 50%;
+        }
+    }
+    .msgbox{
+        background-color: gray;
+        height: 90%;
+        border-radius: 0 0 15px 15px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &__rcv{
+            margin-top: 10px;
+            width: 60%;
+            border: 1px solid white;
+        }
+        &__snt{
+            margin-top: 10px;
+            width: 60%;
+            border: 1px solid white;
+            
+        }
+        &__img{
+            margin-top: 10px;
+            margin-left: auto;
+            display: flex;
+            justify-content: right;
+            width: auto;
+            border: 1px solid white;
+        }
+        &__simg{
+            width: 50px;
+            margin-left: 5px;
+        }
+        &__csh{
+            margin-top: 10px;
+            border: 1px solid white;
+            width: 60%;
+        }
+        &__type{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+        }
+    }
     .description{
         width: 500px;
     }
+    
 }
 

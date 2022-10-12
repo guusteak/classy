@@ -13,9 +13,66 @@
 }
 .page .phone {
   width: 500px;
+  height: 700px;
   border: 1px solid black;
   padding: 25px;
   border-radius: 40px;
+}
+.page .profile {
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  background-color: violet;
+  height: 10%;
+}
+.page .profile__picture {
+  width: 50px;
+  border-radius: 50%;
+}
+.page .msgbox {
+  background-color: gray;
+  height: 90%;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.page .msgbox__rcv {
+  margin-top: 10px;
+  width: 60%;
+  border: 1px solid white;
+}
+.page .msgbox__snt {
+  margin-top: 10px;
+  width: 60%;
+  border: 1px solid white;
+}
+.page .msgbox__img {
+  margin-top: 10px;
+  margin-left: auto;
+  display: flex;
+  justify-content: right;
+  width: auto;
+  border: 1px solid white;
+}
+.page .msgbox__simg {
+  width: 50px;
+  margin-left: 5px;
+}
+.page .msgbox__csh {
+  margin-top: 10px;
+  border: 1px solid white;
+  width: 60%;
+}
+.page .msgbox__type {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
 }
 .page .description {
   width: 500px;
