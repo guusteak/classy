@@ -17,10 +17,12 @@
   justify-content: center;
 }
 .page .phone {
+  position: relative;
   width: 400px;
   height: 700px;
   border: 1px solid black;
   padding: 25px;
+  padding-bottom: 60px;
   border-radius: 40px;
 }
 .page .profile {
@@ -120,5 +122,6 @@
 .txt {
   position: absolute;
   width: 350px;
-  bottom: 100px;
+  bottom: 8px;
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */
