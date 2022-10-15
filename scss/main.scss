@@ -15,12 +15,14 @@
     align-items: center;
     justify-content: center;
     .phone{
+        background-color: white;
         position: relative;
         width: 400px;
         height: 700px;
         border: 1px solid black;
         padding: 25px;
         padding-bottom: 60px;
+        opacity: 100%;
         border-radius: 40px;
     }
     .profile{
@@ -115,6 +117,12 @@
     .description{
         width: 500px;
         padding-left: 50px;
+        &__button{
+            display: block;
+            margin-left: auto;
+            margin-top: 10px;
+            font-size: 2rem;
+        }
     }
     
 }
@@ -125,3 +133,32 @@
     bottom: 8px;
     z-index: 1;
 }
+
+.backdrop{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.onback{
+    width: 100vw;
+    z-index: 3;
+    opacity: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.none{
+    display: none;
+}
+
