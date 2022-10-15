@@ -1,21 +1,27 @@
 const sendMessage = document.querySelector('.msgbox__btn');
 const container = document.querySelector('.msgbox');
 const randomResponse = () =>{
-    const outputArray = ['ok', 'nice', 'test push message',
-     'lemon vodka twice', 'ąężźćż',
-     'tomasz', 'hajto', 'baba',
-      'jebac panstwo izrael',
-        'can i have lemon vodka?'
-    ]
-    let output = Math.random();
-    output = Math.floor((output*10));
-    console.log(outputArray[output]);
-    const response = document.createElement('p');
-    response.classList.add('msgbox__rcv');
-    response.innerHTML = `
-    ${outputArray[output]}
-    `;
-    document.querySelector('.msgbox').appendChild(response);
+    
+    setTimeout(() => {
+        const outputArray = ['ok', 'nice', 'test push message',
+        'lemon vodka twice', 'ąężźćż',
+        'tomasz', 'hajto', 'baba',
+        'jebac panstwo izrael',
+            'can i have lemon vodka?'
+        ]
+        let output = Math.random();
+        output = Math.floor((output*10));
+        console.log(outputArray[output]);
+        const response = document.createElement('p');
+        response.classList.add('msgbox__rcv');
+        response.innerHTML = `
+        ${outputArray[output]}
+        `;
+        document.querySelector('.msgbox').appendChild(response);
+        container.scrollTop = container.scrollHeight;
+    },3000);
+    container.scrollTop = container.scrollHeight;
+    
 }
 console.log(container);
 const send = (e) =>{
