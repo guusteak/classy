@@ -43,36 +43,14 @@ const send = (e) =>{
 let flag = 0;
 
 const goFullScreen = () =>{
-    backdrop.classList.remove('none');
-    onback.classList.remove('none');
-    if(flag===0){
-        const clone = phone.cloneNode(true);
-        onback.appendChild(clone);  
-        onback.classList.add('onFull');
-        document.querySelectorAll('.msgbox__type')[1].addEventListener('keypress', (e) =>{
-            let msg = document.querySelector('.msgbox__type').value;
-    if( (e.key === "Enter") || e.pointerType === "mouse" && msg != "") {
-        const msgsent = document.createElement('p');
-        msgsent.classList.add('msgbox__snt');
-        msgsent.innerHTML = `
-        ${msg}
-        `;
-        document.querySelector('.msgbox').appendChild(msgsent);
-        document.querySelector('.msgbox__type').value = '';
-        randomResponse();
-    };
-        });
-    };
-    flag++;
-    onback.classList.add('onFull');
-    /*
-    document.querySelector('.phone').classList.add('onFull');
     document.querySelector('.description').classList.add('none');
-    */
+    backdrop.classList.remove('none');
+    document.querySelector('.phone').classList.add('onFull');
 }
 
 const goBac = () =>{
     backdrop.classList.add('none');
+    document.querySelector('.description').classList.remove('none');
 }
 
 sendMessage.addEventListener('click', send);
