@@ -1,6 +1,8 @@
 @import 'variables';
 
+
 *{
+    font-family: $font_family;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +11,7 @@
     width: 0;
 }
 .page{
+    background: linear-gradient(45deg, $Pale_Violet, $Very_Light_Magenta);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -18,14 +21,17 @@
         background-color: white;
         position: relative;
         width: 400px;
+        min-width: 400px;
         height: 700px;
-        border: 1px solid black;
         padding: 25px;
         padding-bottom: 60px;
         opacity: 100%;
         border-radius: 40px;
+        box-shadow: 0 0 5px black;
     }
     .profile{
+        color: white;
+        text-shadow: 0 0 10px black;
         border-radius: 15px 15px 0 0;
         display: flex;
         align-items: center;
@@ -138,7 +144,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: gray;
+    background: linear-gradient(45deg, $Pale_Violet, $Very_Light_Magenta);
     top: 0;
     left: 0;
     z-index: 3;
@@ -156,3 +162,16 @@
     display: none;
 }
 
+@media only screen and (max-width:600px) {
+    .page{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .description{
+        width: 200px;
+        &__button{
+            display: block;
+            margin: auto;
+            font-size: 2rem;
+        }}
+}

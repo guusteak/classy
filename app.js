@@ -9,7 +9,7 @@ const randomResponse = () =>{
         const outputArray = ['ok', 'nice', 'test push message',
         'lemon vodka twice', 'ąężźćż',
         'tomasz', 'hajto', 'baba',
-        'jebac panstwo izrael',
+        'This. is very loooooong (actualy average) text image to check how it displays',
             'can i have lemon vodka?'
         ]
         let output = Math.random();
@@ -27,7 +27,7 @@ const randomResponse = () =>{
 };
 const send = (e) =>{
     let msg = document.querySelector('.msgbox__type').value;
-    if( (e.key === "Enter") || e.pointerType === "mouse" && msg != "") {
+    if(( (e.key === "Enter") || e.pointerType === "mouse")&& msg != "") {
         const msgsent = document.createElement('p');
         msgsent.classList.add('msgbox__snt');
         msgsent.innerHTML = `
